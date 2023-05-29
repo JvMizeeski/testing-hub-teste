@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste em HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(img/background.webp);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            ;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            border: 0.10px solid rgba(255, 255, 255, 0.501);
+            border-radius: 35px;
+            padding: 2px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        .logo h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-family: exo;
+        }
+
+        .menu-items {
+            text-align: right;
+        }
+
+        .menu-items a {
+            border: solid 1px white;
+            padding: 20px;
+            border-radius: 25px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-family: montserrat;
+            color: white;
+        }
+
+        a:hover {
+            font-size: 20px;
+            transition: 0.3s all;
+        }
+
+        .sub-head {
+            text-align: center;
+            font-family: montserrat;
+            font-weight: 400;
+            color: #fe7e00;
+        }
+
+        /*Configurações do Header*/
+        .top-head {
+            color: white;
+            font-family: exo;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /*Span Laranja do H1*/
+        .laranja {
+            color: #fe7e00;
+        }
+
+        /*Iframe incorporado pelo vimeo*/
+        .video-page {
+            text-align: center;
+        }
+
+        /*P abaixo do video, venda produtos físicos e digitais...*/
+        .p-head {
+            font-family: montserrat;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        /*Botão laranja do cabeçalho*/
+        .cta {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .cta a {
+            background-color: #fe7e00;
+            padding: 18px 24px;
+            border-radius: 22px;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: montserrat;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+
+        .cta a:hover {
+            font-size: 20px;
+        }
+
+        /*Inicio do main, background branco*/
+        main {
+            padding: 30px;
+            margin-top: 80px;
+            background-color: white;
+        }
+
+        /*Head: Apoio total para seu negócio*/
+        .head1 {
+            font-weight: bold;
+            font-size: 56px;
+            text-align: center;
+            color: #272727;
+        }
+
+        /*Subhead: crie, venda e divulgue...*/
+        .subhead1 {
+            font-size: 24px;
+            font-weight: 400;
+            font-family: montserrat;
+            text-align: center;
+            color: #272727;
+        }
+
+        /*Container Turbo Upsell - Funcionalidades*/
+        .container2 {
+            border: solid 1px rgba(0, 0, 0, 0.141);
+            border-radius: 40px;
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            padding: 40px 40px;
+        }
+
+        /*Container Área de membros grátis - Funcionalidades*/
+        .container3 {
+            -webkit-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            border: solid 1px rgba(0, 0, 0, 0.141);
+            border-radius: 40px;
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 40px 90px 40px;
+        }
+
+        /*Container Suporte nível Doppus - Funcionalidades*/
+        .container4 {
+            border: solid 1px rgba(0, 0, 0, 0.141);
+            border-radius: 40px;
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            padding: 40px 40px 90px 40px;
+        }
+
+        /*Texto Turbo Upsell */
+        .turbo-up {
+            margin-top: 65px;
+            font-family: exo;
+            font-size: 42px;
+            color: #272727;
+
+        }
+
+        h2:hover {
+            color: #fe7e00;
+        }
+
+        .turbo-p {
+            max-width: 80%;
+            font-family: montserrat;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        /*Imagem Turbo Upsell*/
+        .imagemturbo {
+            width: 500px;
+        }
+
+        .imagemtabela {
+            padding: 1px;
+            margin-left: 10px;
+        }
+
+        .tabela-text {
+            width: 650px;
+            color: #717171;
+            font-family: montserrat;
+            font-size: 14px;
+        }
+
+        .botao-turbo {
+            margin-top: 90px;
+            margin-left: 10px;
+        }
+
+        .cta-turbo {
+            text-decoration: none;
+            color: white;
+            background-color: #fe7e00;
+            border-radius: 20px;
+            padding: 20px 30px;
+            font-family: montserrat;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .column-left-column2 {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="img/logo-doppus.png" alt="Logo Doppus" width="140px"></a>
+        </div>
+        <div class="menu-items">
+            <a href="#" style="background-color: white; color: #fe7e00; font-weight: bold;">Quem somos</a>
+            <a href="#" style="background-color: #fe7e00; border: solid #fe7e00; font-weight: bold;">Entrar</a>
+        </div>
+    </div>
+    <h2 class="sub-head">Inteligência em vendas online</h2>
+    <h1 class="top-head">A base forte para vender online, <span class="laranja">sem limites</span>.</h1>
+    <div class="video-page"><iframe src="https://player.vimeo.com/video/829065254?h=f18b575efe" width="860" height="420"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <p class="p-head">Venda produtos físicos e digitais de forma simples, segura e escalável.</p>
+    <div class="cta"><a href="#">Quero vender na Doppus!</a></div>
+    <main>
+        <h1 class="head1">Apoio total para o seu negócio digital.</h1>
+        <h3 class="subhead1">Crie, venda e divulgue o seu produto físico ou infoproduto, com atendimento de primeira e
+            ferramentas de conversão já testadas.</h3>
+        <!--TURBO UPSELL-->
+        <div class="container2">
+            <div class="column left-column">
+                <h2 class="turbo-up">TURBO UPSELL</h2>
+                <p class="turbo-p">Dê adeus à preocupação com o custo dos anúncios. O Turbo Upsell tem tudo que você
+                    precisa para vender várias vezes ao mesmo cliente. Amplie sua oferta final em poucos cliques e ganhe
+                    muito mais por cada venda.</p>
+                <span>
+                    <table>
+                        <tr class="tabelacf">
+                            <td class="imagemtabela"><img src="img/evandro.webp" alt="" style="width: 53px;"></td>
+                            <td class="tabela-text">"Upsell, que minha taxa era 1%, hoje está mais de 10%. Por isso eu
+                                indico a parceria com a Doppus” - Evandro Peri, infoprodutor e cliente Doppus"</td>
+                        </tr>
+                    </table>
+                </span>
+                <div class="botao-turbo"><a href="#" class="cta-turbo">Vender com Turbo Upsell</a></div>
+            </div>
+            <div class="column right-column">
+                <img src="img/func1.webp" alt="Imagem" class="imagemturbo">
+            </div>
+        </div>
+        <!--ÁREA DE MEMBROS GRATIS-->
+        <div class="container3">
+            <div class="column-left-column2">
+                <h2 class="turbo-up">ÁREA DE MEMBROS GRÁTIS</h2>
+                <p class="turbo-p">Seu produto precisa ser visto como uma série de sucesso. A Área de Membros Doppus é
+                    linda, viciante e fácil de usar, como a Netflix. Faça outras ofertas enquanto o cliente assiste às
+                    aulas e chegue no Top #1 do mercado, sem pagar nada por isso.</p>
+                <span>
+                    <table>
+                        <tr class="tabelacf">
+                            <td class="imagemtabela"><img src="img/jessica.webp"
+                                    alt="Jessica Ferreira, infoprodutora e cliente Doppus" style="width:60px"></td>
+                            <td class="tabela-text">“A Área de Membros é incrível. Nós, que somos produtores, sabemos a
+                                diferença que uma plataforma pode fazer nos nossos resultados” - Jéssica Ferreira,
+                                produtora e cliente Doppus</td>
+                        </tr>
+                    </table>
+                </span>
+                <div class="botao-turbo"><a href="#" class="cta-turbo">Quero ser top 1</a></div>
+            </div>
+            <div class="column right-column">
+                <img src="img/tablet.webp" alt="Imagem" class="imagemturbo">
+            </div>
+        </div>
+        <!--SUPORTE NÍVEL DOPPUS-->
+        <div class="container4">
+            <div class="column left-column">
+                <h2 class="turbo-up">SUPORTE NÍVEL DOPPUS</h2>
+                <p class="turbo-p">Dê adeus à preocupação com o custo dos anúncios. O Turbo Upsell tem tudo que você
+                    precisa para vender várias vezes ao mesmo cliente. Amplie sua oferta final em poucos cliques e ganhe
+                    muito mais por cada venda.</p>
+                <span>
+                    <table>
+                        <tr class="tabelacf">
+                            <td class="imagemtabela"><img src="img/victor.webp" alt="" style="width: 53px;"></td>
+                            <td class="tabela-text">“O suporte é uma das coisas que eu mais gosto. Sempre que preciso
+                                eles me ajudam prontamente." Victor Doné, infoprodutor e cliente Doppus</td>
+                        </tr>
+                    </table>
+                </span>
+                <div class="botao-turbo"><a href="#" class="cta-turbo">Quero fazer parte</a></div>
+            </div>
+            <div class="column right-column">
+                <img src="img/notebook.webp" alt="Imagem" style="width: 600px;">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
